@@ -6,12 +6,9 @@
 """
 # r(import-refs)
 #       r.. im
-from __deps__       import *
-from parLam         import Imp
+from .depLam         import *
+from .parLam         import Imp
 from threading       import Thread
-from numbers         import Integral, Real
-from typing          import Iterable, Optional, Any, Union
-from collections.abc import Sequence#, Queue
 #       r.. as
 import      numpy        as _np
 import      torch        as _tc
@@ -20,29 +17,7 @@ import  itertools        as _it
 _JC_NYM = 'lam_get'
 
 
-#   ist = lambda x, *args: isinstance(x, tuple(*args))
-def ist( ox,*fh):
-  if NON in  fh :
-    if   ox  is NON: return True 
-    fh.remove(NON)
-  if    len( fh)==0: return False
-  if    len( fh)==1: return isinstance(ox, fh[0])
-  return                    isinstance(ox, tuple(fh))
 
-
-TYP = {
-  10: bool,
-  11: int,
-  12: float,
-  13: str,
-  14: tuple,
-  21: Integral,
-  22: Real,
-  41: list,
-  42: dict,
-  20: _np.ndarray,
-  30: _tc.Tensor,
-  50: object}
 
 _KY_ = ['dtype','device']
 
@@ -102,10 +77,7 @@ def Var1DiK( ox, fc, ar=NON):
 for _fc in _FC_AT_: TLA_[0][ 'Var'+_fc+'LaK'] =lambda ox, ex:TLA_[0]['Var'+_fc+'DiK'](ox.__dict__, ex)
 
 
-# betrHer
-def Her( fc):
-    if   fc == 'n'  : return  __name__ == "__main__"
-    return  False
+
 
 _LC_HER = os.getcwd()
 # input configs

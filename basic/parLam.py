@@ -6,7 +6,7 @@
 """
 # r(import-refs)
 #       r.. im
-from __deps__       import *
+from basic.depLam       import *
 import argparse as arg
 import json
 import yaml  # ruamel.yaml pyyaml

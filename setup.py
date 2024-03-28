@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
   name    = "muti.basic",
-  version = "0.0.1",
+  version = "0.0.3",
   author  = "E.C.Ares",
   author_email="E.C.Ares@outlook.com",
   description ="utils for pytorch",
