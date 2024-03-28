@@ -1,8 +1,8 @@
 """
- #  取得函集 get-lams
+ #  bas-muti :: get-lam 取函集
  @  E.C.Ares
- !  MIT LICENSE
- `  built in pkp for basic-python mio
+ !  MIT DIVIƷON
+ `  Lam of gets builtin basic-python
 """
 # r(import-refs)
 #       r.. im

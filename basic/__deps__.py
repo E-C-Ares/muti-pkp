@@ -1,10 +1,9 @@
 """
- #  取得函集 get-lams
+ #  bas-muti :: deps_basic 公集
  @  E.C.Ares
- !  MIT LICENSE
- `  built in pkp for basic-python mio
+ !  MIT DIVIƷON
+ `  __deps__ builtin basic-python
 """
-
 
 import os,sys
 from numbers         import Integral, Real

@@ -1,5 +1,12 @@
+"""
+ #  bas-muti :: dep-lam 公函集
+ @  E.C.Ares
+ !  MIT DIVIƷON
+ `  Lam of deps builtin basic-python
+"""
+# r
 from __deps__ import *
-
+# 
 #exptNon = lambda _or, *cfg, **tfg: try: return _or(*cfg, **tfg); except: return None
 def dddfOut_cfc(_or_, fc,*cfg,**tfg): return       _or_[fc](     *cfg,**tfg)
 def dddfOut_afc(_or_,afc,*cfg,**tfg): return {fc : _or_[fc](     *cfg,**tfg) for fc     in afc                 } 
@@ -77,7 +84,8 @@ def ist( ox,*fh):
   if    len( fh)==1: return isinstance(ox, fh[0])
   return                    isinstance(ox, tuple(fh))
 
-
+def setnDic( od, ox):
+    for _eh  in  ox.items():  setattr(od, *_eh)
 # betrHer default False
 def Her( fc=  __name__):
   return fc=="__main__"
